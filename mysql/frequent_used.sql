@@ -3,7 +3,7 @@
 3. show databases;
 4. show tables;
 5. use xxx;
-. check charset: show variables like '%character%';
+6. check charset: show variables like '%character%';
 7. create table search_log( id int not null auto_increment, keyword varchar(200) not null, frequency int, primary key(id)  )charset=utf8;
 8. 复制表结构及数据到新表
 CREATE TABLE 新表SELECT * FROM 旧表
@@ -30,3 +30,4 @@ load data local infile 'search_log_20170401.1' into table search_log(keyword,fre
 
 21. truncate search_log;
 22. delete from search_log where keword='count';
+23. show tables like "test1";
